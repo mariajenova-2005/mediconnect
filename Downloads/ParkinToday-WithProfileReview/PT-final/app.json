@@ -1,0 +1,31 @@
+{
+  "expo": {
+    "name": "ParkinToday",
+    "slug": "parkin-today",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./logo.jpg",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": false,
+      "infoPlist": {
+        "NSCameraUsageDescription": "ParkinToday needs camera access so you can photograph your RC book.",
+        "NSPhotoLibraryUsageDescription": "ParkinToday needs photo library access so you can upload a picture of your RC book."
+      }
+    },
+    "android": {
+      "package": "com.parkintoday.app",
+      "permissions": ["CAMERA", "READ_MEDIA_IMAGES"]
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "ParkinToday needs photo library access so you can upload a picture of your RC book.",
+          "cameraPermission": "ParkinToday needs camera access so you can photograph your RC book."
+        }
+      ]
+    ]
+  }
+}

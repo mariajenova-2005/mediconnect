@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "ParkinToday",
+    "slug": "parkintoday",
+    "scheme": "parkintoday",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/logo.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#1B2329"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": false,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "ParkinToday uses your location to show parking slots within 3 km."
+      }
+    },
+    "android": {
+      "package": "com.parkintoday.app",
+      "edgeToEdgeEnabled": true,
+      "permissions": ["ACCESS_FINE_LOCATION", "ACCESS_COARSE_LOCATION"],
+      "config": {
+        "googleMaps": {
+          "apiKey": "YOUR_GOOGLE_MAPS_API_KEY"
+        }
+      }
+    },
+    "plugins": [
+      "expo-font",
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "ParkinToday uses your location to show parking slots within 3 km."
+        }
+      ]
+    ]
+  }
+}
