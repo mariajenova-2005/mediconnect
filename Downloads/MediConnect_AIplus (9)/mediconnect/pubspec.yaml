@@ -1,0 +1,67 @@
+name: mediconnect
+description: "MediConnect — modern hospital management & emergency connect app."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+
+  # State management
+  provider: ^6.1.2
+
+  # UI / Animation
+  google_fonts: ^6.2.1
+  flutter_animate: ^4.5.0
+  lottie: ^3.1.2
+  shimmer: ^3.0.0
+  percent_indicator: ^4.2.3
+
+  # Maps & Location (needs your own Google Maps API key — see README)
+  google_maps_flutter: ^2.6.1
+  geolocator: ^12.0.0
+  geocoding: ^3.0.0
+
+  # Realtime backend (needs your own Firebase project — see README)
+  firebase_core: ^3.1.0
+  cloud_firestore: ^5.0.1
+  firebase_auth: ^5.1.0
+
+  # Networking (for chatbot / any external disease-info API)
+  http: ^1.2.1
+  url_launcher: ^6.3.0
+  flutter_map: ^7.0.2
+  latlong2: ^0.9.1
+  audioplayers: ^6.1.0
+  volume_controller: ^2.0.7
+  speech_to_text: ^7.0.0
+  flutter_tts: ^4.0.2
+  flutter_contacts: ^1.1.9+2
+  shared_preferences: ^2.2.3
+  crypto: ^3.0.3
+  google_mlkit_pose_detection: ^0.11.0
+
+  # Camera + gesture foundation (needs google_mlkit_pose_detection on-device — see README)
+  camera: ^0.11.0+1
+
+  intl: ^0.19.0
+  uuid: ^4.4.0
+
+  # --- Optional, add when wiring real backend features (see README) ---
+  # flutter_webrtc: ^0.11.7         # real peer-to-peer video calls (video_consultation_screen.dart)
+  # socket_io_client: ^2.0.3+1      # WebRTC signaling client, matches backend/server.js
+  # file_picker: ^8.0.5             # real PDF upload (ai_report_analyzer_screen.dart)
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/sounds/
